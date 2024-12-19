@@ -1,0 +1,23 @@
+{
+  "name": "Tracquest",
+  "description": "Tracquest",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "serviceWorker.js"
+  },
+  "permissions": [
+    "webRequest",
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "side_panel": {
+    "default_path": "contents/index.html"
+  },
+  "action": {
+    "default_title": "Click to Open"
+  }
+}

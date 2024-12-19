@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 52px;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.icon-nav {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon-nav:hover {
+  cursor: pointer;
+}
+.navbar-menu.is-active {
+  left: 0;
+}
